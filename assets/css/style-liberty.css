@@ -4644,6 +4644,8 @@ fieldset:disabled .btn {
 
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
+    justify-content: space-between; /* 均勻分布 */
+    width: 100%; /* 使導航欄寬度佔滿父元素 */
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -17901,8 +17903,8 @@ fieldset:disabled .btn {
 }
 
 :root {
-  --primary-color: #0b3d91;
-  --secondary-color: #fc3d21;
+  --primary-color: #0f6032;
+  --secondary-color: #0f6032;
   --font-color: #555;
   --bg-color: #fff;
   --heading-color: #02112a;
