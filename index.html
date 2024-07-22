@@ -141,11 +141,13 @@
               生機飲食之難得貴在實踐，而如果我們在實踐的過程中，能找到一處可以交換心得的訊息交流站，並得到友伴的支持，所得到的正面能量將可影響更多的人，像漣漪般傳遞出去
             </p>
             <div class="w3l-buttons mt-sm-5 mt-4">
-              <a class="btn btn-primary btn-style me-2" href="about.html"
-                >Read More
+              <a
+                class="btn btn-primary btn-style me-2"
+                href="aboutFranchise.html"
+                >立即了解
               </a>
               <a class="btn btn-outline-primary btn-style" href="contact.html">
-                Get Started
+                聯繫我們
               </a>
             </div>
           </div>
@@ -1036,27 +1038,24 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const elements = document.querySelectorAll(".anime-set");
-
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 const target = entry.target;
-
-                // 判断是否已经有其他滑入动画类
+                // 判斷是否有動畫標籤
                 if (
                   !target.classList.contains("slide-in-right") &&
                   !target.classList.contains("slide-in-left")
                 ) {
                   target.classList.add("slide-in-bottom");
                 }
-
-                observer.unobserve(target); // 进入视口后不再观察
+                observer.unobserve(target); // 進入後不再觀察
               }
             });
           },
           {
-            threshold: 0.5, // 当元素的50%进入视口时触发回调
+            threshold: 0.5, // 元素進入窗口50%觸發
           }
         );
 

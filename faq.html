@@ -179,12 +179,12 @@
 
     <section class="w3l-products w3l-faq-block py-5" id="projects">
       <div class="container py-md-5 py-2">
-        <div class="header-secw3 text-center mb-5">
+        <div class="header-secw3 text-center mb-5 anime-set">
           <h6 class="title-subhny mb-2">faqs</h6>
           <h3 class="title-w3l mb-4">常見問題</h3>
         </div>
         <div class="row">
-          <div class="col-lg-6 mx-auto pe-lg-5">
+          <div class="col-lg-6 mx-auto pe-lg-5 anime-set slide-in-left">
             <div class="w3hny-business-img">
               <img
                 src="assets/images/g8.jpg"
@@ -193,7 +193,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-6 mt-lg-0 mt-sm-5 mt-4">
+          <div class="col-lg-6 mt-lg-0 mt-sm-5 mt-4 anime-set">
             <div class="accordion">
               <div class="accordion-item">
                 <button id="accordion-button-1" aria-expanded="true">
@@ -602,5 +602,36 @@
 
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- //偵測滑入 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".anime-set");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const target = entry.target;
+                // 判斷是否有動畫標籤
+                if (
+                  !target.classList.contains("slide-in-right") &&
+                  !target.classList.contains("slide-in-left")
+                ) {
+                  target.classList.add("slide-in-bottom");
+                }
+                observer.unobserve(target); // 進入後不再觀察
+              }
+            });
+          },
+          {
+            threshold: 0.5, // 元素進入窗口50%觸發
+          }
+        );
+
+        elements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
   </body>
 </html>

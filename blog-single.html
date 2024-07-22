@@ -213,9 +213,9 @@
                   alt=""
                 />
                 <div class="text11-content">
-                  <h4 class="">愛的種子</h4>
+                  <h4 class="anime-set">愛的種子</h4>
 
-                  <p class="mt-4 mb-3">
+                  <p class="mt-4 mb-3 anime-set">
                     單純一顆愛的種子發芽了，生命生生不息現在這顆種子的存在來自於成熟的果實孕育出來的來自於無私供給養份的大地母親包含著過去，來到現在，更走向未來綿延散播健康
                     散播愛當你發現愛，你就懂得如何去生活有機世界有機心我們深信地球只有一個我們有責任為後代的子孫保留一塊淨土回歸自然
                     反璞歸真 創造健康
@@ -465,27 +465,24 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const elements = document.querySelectorAll(".anime-set");
-
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 const target = entry.target;
-
-                // 判断是否已经有其他滑入动画类
+                // 判斷是否有動畫標籤
                 if (
                   !target.classList.contains("slide-in-right") &&
                   !target.classList.contains("slide-in-left")
                 ) {
                   target.classList.add("slide-in-bottom");
                 }
-
-                observer.unobserve(target); // 进入视口后不再观察
+                observer.unobserve(target); // 進入後不再觀察
               }
             });
           },
           {
-            threshold: 0.4, // 当元素的50%进入视口时触发回调
+            threshold: 0.5, // 元素進入窗口50%觸發
           }
         );
 
