@@ -20913,6 +20913,12 @@ section.w3l-passion-mid-sec {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .w3l-video {
+    background-attachment: scroll; /* 移動設備禁用fixed */
+  }
+}
+
 .w3l-video::before {
   content: "";
   background: var(--layer-1);
@@ -20927,7 +20933,6 @@ section.w3l-passion-mid-sec {
 .w3l-index5 {
   background: url(../images/video.jpg) no-repeat center;
   -ms-background-size: cover;
-  background-attachment: fixed; /* 增加這行來實現視差滾動效果 */
   background-size: cover;
   z-index: 0;
   position: relative;
@@ -22538,7 +22543,6 @@ a.blog-desc1:hover {
 .w3l-clients .cusrtomer-layout {
   background: url(../images/banner4.jpg) no-repeat center;
   -ms-background-size: cover;
-  background-attachment: fixed; /* 增加這行來實現視差滾動效果 */
   background-size: cover;
   z-index: 0;
   position: relative;
