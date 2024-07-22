@@ -129,7 +129,9 @@
     <section class="w3l-main-content" id="home">
       <div class="container">
         <div class="row align-items-center w3l-slider-grids">
-          <div class="col-lg-6 w3l-slider-left-info pe-lg-5">
+          <div
+            class="col-lg-6 w3l-slider-left-info pe-lg-5 anime-set slide-in-left"
+          >
             <h6 class="title-subhny mb-2">We are gathered</h6>
             <h3 class="mb-2 title"><span>For</span> Your</h3>
             <h3 class="mb-4 title">
@@ -148,7 +150,7 @@
             </div>
           </div>
           <div
-            class="col-lg-6 w3l-slider-right-info mt-lg-0 mt-5 ps-lg-5 align-items-center"
+            class="col-lg-6 w3l-slider-right-info mt-lg-0 mt-5 ps-lg-5 align-items-center anime-set slide-in-right"
           >
             <div class="w3l-main-slider banner-slider">
               <div class="owl-one owl-carousel owl-theme">
@@ -205,7 +207,7 @@
     <!--/video-section-->
     <section class="w3l-video" id="video">
       <div class="video-mid-w3 py-5">
-        <div class="container py-md-5 py-3">
+        <div class="container py-md-5 py-3 anime-set">
           <!--/row-1-->
           <div class="row">
             <div class="col-lg-6 mt-lg-0 mb-5 align-self pe-lg-3">
@@ -270,8 +272,9 @@
       <div class="blog py-5" id="classes">
         <div class="container py-lg-5">
           <div class="row align-items-center">
+            <!-- 第一個圖 -->
             <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
-              <div class="w3img-grids-info">
+              <div class="anime-set">
                 <div class="w3img-grids-info-gd position-relative">
                   <a href="#services">
                     <div class="page">
@@ -306,7 +309,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
-              <div class="w3img-grids-info">
+              <div class="anime-set">
                 <div class="w3img-grids-info-gd position-relative">
                   <a href="#services">
                     <div class="page">
@@ -341,7 +344,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
-              <div class="w3img-grids-info">
+              <div class="anime-set">
                 <div class="w3img-grids-info-gd position-relative">
                   <a href="#services">
                     <div class="page">
@@ -396,13 +399,13 @@
     <section class="w3l-courses" id="blog">
       <div class="blog py-5" id="classes">
         <div class="container py-lg-5">
-          <div class="header-secw3 text-center">
+          <div class="header-secw3 text-center anime-set">
             <h6 class="title-subhny mb-2">加盟分享</h6>
             <h3 class="title-w3l">★加盟主打星</h3>
           </div>
 
           <div class="row align-items-center">
-            <div class="col-lg-4 col-md-6 item mt-md-5 mt-4">
+            <div class="col-lg-4 col-md-6 item mt-md-5 mt-4 anime-set">
               <div class="card">
                 <div class="card-header p-0 position-relative">
                   <a href="blog-single.html">
@@ -447,7 +450,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 item mt-md-5 mt-4">
+            <div class="col-lg-4 col-md-6 item mt-md-5 mt-4 anime-set">
               <div class="card">
                 <div class="card-header p-0 position-relative">
                   <a href="blog-single.html">
@@ -492,7 +495,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 item mt-md-5 mt-4">
+            <div class="col-lg-4 col-md-6 item mt-md-5 mt-4 anime-set">
               <div class="card">
                 <div class="card-header p-0 position-relative">
                   <a href="blog-single.html">
@@ -541,7 +544,7 @@
       </div>
     </section>
     <section class="w3l-grids-3 py-5">
-      <div class="container py-md-5 py-3">
+      <div class="container py-md-5 py-3 anime-set">
         <div class="row align-items-center">
           <div class="col-lg-6 header-sec">
             <h6 class="title-subhny mb-2">文字區塊1</h6>
@@ -598,7 +601,7 @@
 
     <section class="w3l-clients" id="clients">
       <!-- /grids -->
-      <div class="cusrtomer-layout py-5">
+      <div class="cusrtomer-layout py-5 anime-set">
         <div class="container py-lg-5 py-md-3">
           <!-- /grids -->
           <div class="testimonial-width">
@@ -656,18 +659,12 @@
                   <div class="testimonial">
                     <blockquote>
                       <i class="fas fa-quote-left"></i>
-                      <q>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Velit beatae laudantium voluptate rem ullam dolore nisi
-                        voluptatibus esse quasi, doloribus tempora. Dolores
-                        molestias adipisci dolor sit amet!. Lorem ipsum dolor
-                        sit amet.</q
-                      >
+                      <q> 文字區塊2 - 內文區塊4</q>
                     </blockquote>
                     <div class="testi-des">
                       <div class="peopl align-self">
-                        <h3>Mike Thyson</h3>
-                        <p class="indentity">Example City</p>
+                        <h3>Join us!</h3>
+                        <p class="indentity">Example text</p>
                       </div>
                     </div>
                   </div>
@@ -1034,5 +1031,39 @@
 
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- //偵測滑入 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".anime-set");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const target = entry.target;
+
+                // 判断是否已经有其他滑入动画类
+                if (
+                  !target.classList.contains("slide-in-right") &&
+                  !target.classList.contains("slide-in-left")
+                ) {
+                  target.classList.add("slide-in-bottom");
+                }
+
+                observer.unobserve(target); // 进入视口后不再观察
+              }
+            });
+          },
+          {
+            threshold: 0.5, // 当元素的50%进入视口时触发回调
+          }
+        );
+
+        elements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
   </body>
 </html>

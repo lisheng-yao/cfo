@@ -20903,6 +20903,7 @@ section.w3l-passion-mid-sec {
   background: url(../images/video.jpg) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
+  background-attachment: fixed; /* 增加這行來實現視差滾動效果 */
   z-index: 0;
   position: relative;
   display: grid;
@@ -22536,6 +22537,7 @@ a.blog-desc1:hover {
 .w3l-clients .cusrtomer-layout {
   background: url(../images/banner4.jpg) no-repeat center;
   -ms-background-size: cover;
+  background-attachment: fixed; /* 增加這行來實現視差滾動效果 */
   background-size: cover;
   z-index: 0;
   position: relative;
@@ -23031,6 +23033,74 @@ a.blog-desc1:hover {
   .w3l-footer-29-main a.navbar-brand {
     font-size: 26px;
   }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.anime-set {
+  opacity: 0; /* 初始状态为不可见 */
+}
+
+.anime-set.slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
+  opacity: 1;
+}
+
+.anime-set.slide-in-left {
+  animation: slideInFromLeft 1s ease-out forwards;
+  opacity: 1;
+}
+
+.anime-set.slide-in-bottom {
+  animation: slideInFromBottom 1s ease-out forwards;
+  opacity: 1;
+}
+
+.anime-set.slide-in-top {
+  animation: slideInFromTop 1s ease-out forwards;
+  opacity: 1;
 }
 
 /*--//w3l-footer-29-main--*/

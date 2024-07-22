@@ -209,7 +209,7 @@
                 <!-- single post -->
                 <img
                   src="assets/images/food-safety.jpg"
-                  class="img-fluid radius-image"
+                  class="img-fluid radius-image anime-set"
                   alt=""
                 />
                 <div class="text11-content">
@@ -222,7 +222,7 @@
                     快樂的生命棉花田生機園地致力於推動有機志業與地球環保，倡導並實踐現代人有機、天然的生活觀，棉花田透過定期舉辦的生機膳食課程與健康樂活講座，以及身心靈饗宴分享，讓每位員工都成為專業的有機飲食教師之實踐者。
                   </p>
 
-                  <h5 class="quote">
+                  <h5 class="quote anime-set">
                     相信健康絕對不是喊口號，而是由裡而外，將理念付諸行動的過程。
                     <footer class="blockquote-footer mt-3">
                       創辦人 翁湘淳老師
@@ -234,21 +234,21 @@
                       <a href="#url"
                         ><img
                           src="assets/images/teacher-1.jpg"
-                          class="img-fluid radius-image"
+                          class="img-fluid radius-image anime-set"
                           alt=""
                       /></a>
                     </div>
-                    <div class="col-md-6 mt-md-0 mt-3 align-self">
+                    <div class="col-md-6 mt-md-0 mt-3 align-self anime-set">
                       <p class="">
                         創辦緣起數十年前，創辦人翁湘淳老師站在事業的顛峰，身體卻出現了警訊。長期工作繁忙加上壓力，導致全身免疫系統出了問題。翁老師曾有一整年的時間都在生病，即使每天睡上廿個小時，整個人依然無精打采、提不起勁。在偶然的機緣下，聽到雷久南博士談論生機飲食的錄音帶，於是開始蒐集相關資料，並且在自家後院種蔬菜，遵守不灑農藥、不施化肥的原則，飲食內容逐漸提高生食比例，幾個月後，病情康復，身體機能也恢復正常運作。試行生機飲食一段時間，體力復原狀況有目共睹，親戚朋友也覺得很神奇，紛紛要求翁老師開班授課，分享她生機飲食的觀念。於是翁老師結束原有的服飾業務，以原有士林店面作為分享生機飲食的處所。
                       </p>
                     </div>
                   </div>
-                  <h4 class="mb-4">坐而言不如起而行</h4>
-                  <p class="mb-4">
+                  <h4 class="mb-4 anime-set">坐而言不如起而行</h4>
+                  <p class="mb-4 anime-set">
                     剛開始，只是單純分享所學及生機飲食的觀念，她以義工的心態分享成長與喜悅，以推廣的心情開課，所有課程皆免費結緣，而學員的熱烈反應，也完全超乎翁老師的預期；在課程持續地推廣與學員數量不斷增加下，也讓棉花田的規模持續成長，在無壓力並充滿愛的能量下，一路發展到至今。翁老師推出身心靈成長的相關活動及計畫，她認為生機飲食之難得貴在實踐，而如果我們在實踐的過程中，能找到一處可以交換心得的訊息交流站，並得到友伴的支持，所得到的正面能量將可影響更多的人，像漣漪般傳遞出去，力量也不可同日而語。翁老師一直扮演著傳播推廣生機飲食的角色！
                   </p>
-                  <div class="text-list mb-4">
+                  <div class="text-list mb-4 anime-set">
                     <ol>
                       <li>
                         期勉所有學員們「坐而言不如起而行」來身體力行生機飲食的精神內涵。
@@ -261,10 +261,10 @@
                       </li>
                     </ol>
                   </div>
-                  <h4 class="mb-4">品質宣言</h4>
+                  <h4 class="mb-4 anime-set">品質宣言</h4>
                   <img
                     src="assets/images/品質宣言2.jpg"
-                    class="img-fluid"
+                    class="img-fluid anime-set"
                     alt=""
                   />
                 </div>
@@ -460,5 +460,39 @@
 
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- //偵測滑入 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".anime-set");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const target = entry.target;
+
+                // 判断是否已经有其他滑入动画类
+                if (
+                  !target.classList.contains("slide-in-right") &&
+                  !target.classList.contains("slide-in-left")
+                ) {
+                  target.classList.add("slide-in-bottom");
+                }
+
+                observer.unobserve(target); // 进入视口后不再观察
+              }
+            });
+          },
+          {
+            threshold: 0.4, // 当元素的50%进入视口时触发回调
+          }
+        );
+
+        elements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
   </body>
 </html>

@@ -209,34 +209,36 @@
                 <!-- single post -->
                 <img
                   src="assets/images/video.jpg"
-                  class="img-fluid radius-image"
+                  class="img-fluid radius-image anime-set"
                   alt=""
                 />
                 <div class="text11-content">
-                  <h4 class="">支持在地有機農</h4>
+                  <h4 class="anime-set">支持在地有機農</h4>
 
-                  <p class="mt-4 mb-3">
+                  <p class="mt-4 mb-3 anime-set">
                     棉花田長期深耕健康安食、永續大地的有機實踐，持續分享台灣在地有機農友的生命故事，讓大眾更了解有機農產品從無到有、從土地到餐桌的步步歷程，同心珍視並一起守護這份友善循環。
                   </p>
 
-                  <h4 class="">安心蔬果產地直送</h4>
+                  <h4 class="anime-set">安心蔬果產地直送</h4>
 
-                  <p class="mt-4 mb-3">
+                  <p class="mt-4 mb-3 anime-set">
                     棉花田販售的在地鮮採蔬果，品質宣言皆為「有機」或「有機轉型期」。前者符合國家有機標準，為最高有機認證規範；後者遵循有機管理辦法，等同有機商品規格。
                   </p>
 
-                  <h4 class="">讓有機成為日常</h4>
+                  <h4 class="anime-set">讓有機成為日常</h4>
 
-                  <p class="mt-4 mb-3">
+                  <p class="mt-4 mb-3 anime-set">
                     一包有機蔬菜、一瓶有機醬油、一罐有機堅果，每一次選擇，都是我們對待生活的方式。
                   </p>
 
-                  <h5 class="quote">
+                  <h5 class="quote anime-set">
                     秉持「食好鬥相報」的共享精神，棉花田致力推廣在地有機農產品，邀請您一起將有機理念化為實際支持，讓農友們的堅持有了甘甜回饋。
-                    <footer class="blockquote-footer mt-3">棉花田</footer>
+                    <footer class="blockquote-footer mt-3 anime-set">
+                      棉花田
+                    </footer>
                   </h5>
 
-                  <div class="sing-post-thumb mb-lg-5 mb-4 row pt-3">
+                  <div class="sing-post-thumb mb-lg-5 mb-4 row pt-3 anime-set">
                     <div class="col-md-6">
                       <a href="#url"
                         ><img
@@ -252,7 +254,7 @@
                       </p>
                     </div>
                   </div>
-                  <h4 class="mb-4">
+                  <!-- <h4 class="mb-4">
                     Quisque sagittis lacus eu lorem sodalesd enean adipiscing.
                   </h4>
                   <p class="mb-4">
@@ -292,7 +294,7 @@
                     semper. Fusce faucibus ante vitae justo efficitur elementum.
                     Donec ipsum faucibus. Donec ipsum faucibus arcu elementum.
                     Quisque sagittis lacus eu lorem sodalesd enean adipiscing.
-                  </p>
+                  </p> -->
                 </div>
               </div>
               <!--//blogs-right-->
@@ -486,5 +488,39 @@
 
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- //偵測滑入 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".anime-set");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const target = entry.target;
+
+                // 判断是否已经有其他滑入动画类
+                if (
+                  !target.classList.contains("slide-in-right") &&
+                  !target.classList.contains("slide-in-left")
+                ) {
+                  target.classList.add("slide-in-bottom");
+                }
+
+                observer.unobserve(target); // 进入视口后不再观察
+              }
+            });
+          },
+          {
+            threshold: 0.5, // 当元素的50%进入视口时触发回调
+          }
+        );
+
+        elements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
   </body>
 </html>

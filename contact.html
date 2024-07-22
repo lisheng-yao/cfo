@@ -204,7 +204,7 @@
         <div class="container">
           <div class="row contact-view">
             <div class="col-lg-5 cont-details pe-lg-5">
-              <div class="contactct-fm-text text-left">
+              <div class="contactct-fm-text text-left anime-set slide-in-left">
                 <h6 class="title-subhny">Say Hello</h6>
                 <h3 class="title-w3l mb-2">聯絡我們</h3>
                 <p class="mb-sm-5 mb-4">
@@ -253,7 +253,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 ab-left ps-lg-5">
+            <div class="col-lg-5 ab-left ps-lg-5 anime-set slide-in-right">
               <a href="https://www.sun-organism.com.tw/contactus.php">
                 <img
                   src="assets/images/banner1.jpg"
@@ -450,5 +450,39 @@
 
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- //偵測滑入 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".anime-set");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const target = entry.target;
+
+                // 判断是否已经有其他滑入动画类
+                if (
+                  !target.classList.contains("slide-in-right") &&
+                  !target.classList.contains("slide-in-left")
+                ) {
+                  target.classList.add("slide-in-bottom");
+                }
+
+                observer.unobserve(target); // 进入视口后不再观察
+              }
+            });
+          },
+          {
+            threshold: 0.5, // 当元素的50%进入视口时触发回调
+          }
+        );
+
+        elements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
   </body>
 </html>
