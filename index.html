@@ -1064,5 +1064,19 @@
         });
       });
     </script>
+
+    <script>
+      $(document).ready(function () {
+        // 觸發下拉選單顯示
+        $(".nav-item.dropdown").on("mouseenter", function () {
+          $(this).find(".dropdown-menu").addClass("show");
+        });
+
+        // 觸發下拉選單隱藏
+        $(".nav-item.dropdown").on("mouseleave", function () {
+          $(this).find(".dropdown-menu").removeClass("show");
+        });
+      });
+    </script>
   </body>
 </html>
