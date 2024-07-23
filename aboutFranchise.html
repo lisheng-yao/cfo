@@ -649,35 +649,7 @@
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- //偵測滑入 -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const elements = document.querySelectorAll(".anime-set");
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                const target = entry.target;
-                // 判斷是否有動畫標籤
-                if (
-                  !target.classList.contains("slide-in-right") &&
-                  !target.classList.contains("slide-in-left")
-                ) {
-                  target.classList.add("slide-in-bottom");
-                }
-                observer.unobserve(target); // 進入後不再觀察
-              }
-            });
-          },
-          {
-            threshold: 0.5, // 元素進入窗口50%觸發
-          }
-        );
-
-        elements.forEach((element) => {
-          observer.observe(element);
-        });
-      });
-    </script>
+    <!-- //add.js -->
+    <script src="assets/js/add.js"></script>
   </body>
 </html>
