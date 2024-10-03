@@ -22058,27 +22058,27 @@ h3.aside-title {
 }
 
 .text-11 .text11-content h4 {
-  font-size: 22px;
-  line-height: 32px;
-  color: var(--heading-color);
+  /* font-size: 22px; */
+  /* line-height: 32px; */
+  /* color: var(--heading-color); */
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 40px;
 }
 
 .text-11 .text11-content-brand-introduction h4 {
-  font-size: 22px;
-  line-height: 32px;
-  color: #00913a;
+  /* font-size: 22px; */
+  /* line-height: 32px; */
+  /* color: #00913a; */
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 40px;
 }
 
 .text-11 .text11-content-brand-introduction li h4 {
-  font-size: 22px;
-  line-height: 32px;
-  color: #00913a;
+  /* font-size: 22px; */
+  /* line-height: 32px; */
+  /* color: #00913a; */
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 40px;
@@ -22296,7 +22296,6 @@ a.next-post {
   padding: 30px;
   border-left: 4px solid var(--secondary-color);
   background: var(--bg-grey);
-  margin: 50px 0;
   font-size: 22px;
   line-height: 32px;
   font-weight: 600;
@@ -23206,7 +23205,7 @@ a.blog-desc1:hover {
 /* 文字樣式 */
 .overlay-text p {
   color: white; /* 白色文字 */
-  font-size: 48px;
+  /* font-size: 48px; */
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
@@ -23230,9 +23229,9 @@ a.blog-desc1:hover {
 }
 
 .custom-img {
-  width: 150%; /* 確保圖片占滿父元素 */
-  max-width: 1000px; /* 控制圖片的最大寬度，依需要調整 */
-  height: auto; /* 保持圖片的縱橫比 */
+  width: 100%;  /* 確保圖片占滿父元素
+  /* max-width: 1000px; 控制圖片的最大寬度，依需要調整 */
+  height: auto;  /* 保持圖片的縱橫比
 }
 
 @media (max-width: 991px) {
@@ -23416,15 +23415,15 @@ a.blog-desc1:hover {
 /* 中天透明區塊 */
 .row.align-items-center-1 {
   background-color: rgba(255, 255, 255, 0.7); /* 白色背景，70%透明 */
-  padding: 40px 0; /* 取消左右的內邊距，只保持上下內邊距 */
-  border-radius: 10px; /* 增加圓角效果 */
-  text-align: center; /* 讓文字居中 */
-  width: 100vw; /* 寬度設置為視窗寬度 */
-  position: relative; /* 確保正確定位 */
-  left: 50%; /* 保持居中 */
-  transform: translateX(-50%); /* 水平居中對齊 */
-  margin: 0; /* 移除外邊距，確保佔滿左右 */
-  max-width: 100vw; /* 確保寬度不會超過螢幕寬度 */
+  padding: 40px 0px; /* 取消左右的內邊距，只保持上下內邊距
+  /* border-radius: 10px; 增加圓角效果
+  text-align: center; 讓文字居中
+  width: 100vw; 寬度設置為視窗寬度
+  position: relative; 確保正確定位
+  left: 50%; 保持居中
+  transform: translateX(-50%); 水平居中對齊
+  margin: 0; 移除外邊距，確保佔滿左右
+  max-width: 100vw; 確保寬度不會超過螢幕寬度 */
 }
 
 /* Part4.中天-section */
@@ -23652,7 +23651,7 @@ a.blog-desc1:hover {
 
 .support-container {
   background-color: white; /* 設定白色背景 */
-  border: 2px solid #ef561a; /* 設定橘色邊框 */
+  /* border: 2px solid #ef561a; 設定橘色邊框 */
   border-radius: 10px; /* 添加圓角 */
 }
 
