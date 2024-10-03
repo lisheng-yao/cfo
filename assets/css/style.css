@@ -1,0 +1,153 @@
+.single table,
+.single th,
+.single td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.single table td {
+  padding: 10px;
+}
+
+.single ul {
+  margin-left: 20px;
+}
+
+.single li {
+  list-style-type: square;
+}
+
+.breadcrumb-bg-about {
+  background: url(../images/bn1.jpg) no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.breadcrumb-bg-about::before {
+  background: inherit;
+}
+
+.resp-tab-active {
+  background: #f08307 !important;
+}
+
+.aboutFranchise li {
+  width: 32%;
+}
+
+.modelFranchise li {
+  width: 47%;
+}
+
+.list-group li {
+  margin: 0px 0px 20px 20px;
+  color: #f08307;
+  font-weight: bolder;
+  line-height: 1.5em;
+}
+
+
+ol.list-group li {
+  list-style-type: decimal !important;
+}
+
+ul.list-group li {
+  list-style-type: disc !important;
+}
+
+.list-group li span {
+  color: #000;
+  font-weight: normal;
+  margin-left: 15px;
+}
+
+.list-group p {
+  margin-bottom: 1.5em;
+}
+
+.color-primary {
+  color: #f08307;
+}
+
+.color-secondary {
+  color: #00b347;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-blue {
+  color: #1D9AD6;
+}
+
+.bg-primary {
+  background-color: #f08307 !important;
+}
+
+.bg-secondary {
+  background-color: #00b347 !important;
+}
+
+.bg-blue {
+  background-color: #1D9AD6 !important;
+}
+
+.border-py-blue {
+  border-top: 1px solid #1D9AD6 !important;
+  border-bottom: 1px solid #1D9AD6 !important;
+}
+
+.flow ul {
+  float: left;
+}
+
+.flow li {
+  list-style-type: none !important;
+  display: inline-block;
+  margin: 0px 25px 15px 0px;
+}
+
+.flow li::after {
+  display: inline-block;
+  margin-left: 1.25em;
+  vertical-align: 0.955em;
+  content: "";
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  content: "";
+  background-image: url("../images/flow-icon.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.flow li:last-child:after {
+  display: none;
+}
+
+.blogw3-left-content.w3l-bloggris-single-post {
+  max-width: 960px;
+}
+
+@media (max-width: 768px) {
+  .microbio {
+    width: 100%;
+  }
+
+  .microbio div {
+    display: flex;
+    align-items: center;
+  }
+
+  .microbio img {
+    width: 45%;
+    display: inline-block;
+  }
+
+  .microbio p {
+    width: 50%;
+    display: inline-block;
+  }
+}
