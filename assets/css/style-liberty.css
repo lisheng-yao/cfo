@@ -20400,7 +20400,7 @@ pre {
 /*--//error--*/
 /*--/inner-banner--*/
 .breadcrumb-bg-about {
-  background: url(../images/banner4.jpg) no-repeat;
+  background: url(../images/加盟網站_加盟辦法背景.jpg) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20936,7 +20936,7 @@ section.w3l-passion-mid-sec {
 
 /*--/w3l-video--*/
 .w3l-video {
-  background: url(../images/video.png) no-repeat center;
+  background: url(../images/加盟網站圖_yt背景.jpg) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
   background-attachment: fixed; /* 增加這行來實現視差滾動效果 */
@@ -23458,7 +23458,7 @@ a.blog-desc1:hover {
 .line {
   background-color: #006400; /* 線條的綠色 */
   height: 10px; /* 線條的厚度 */
-  width: 400px; /* 線條的長度，可以根據需求調整 */
+  width: 200px; /* 線條的長度，可以根據需求調整 */
 }
 
 /* 設置主要標題樣式 */

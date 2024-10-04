@@ -18,7 +18,7 @@
 }
 
 .breadcrumb-bg-about {
-  background: url(../images/bn1.jpg) no-repeat;
+  background: url(../images/加盟網站_加盟辦法背景.jpg) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
 }
@@ -130,6 +130,16 @@ ul.list-group li {
 .blogw3-left-content.w3l-bloggris-single-post {
   max-width: 960px;
 }
+
+
+@media(min-width: 992px) {
+
+  .microbio {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
 
 @media (max-width: 768px) {
   .microbio {
