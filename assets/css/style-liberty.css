@@ -608,7 +608,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .img-thumbnail {
@@ -20401,11 +20401,11 @@ pre {
 /*--/inner-banner--*/
 .breadcrumb-bg-about {
   background: url(../images/加盟網站_加盟辦法背景.jpg) no-repeat;
-  background-size: contain;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  -ms-background-size: contain;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
   position: relative;
   z-index: 0;
   display: grid;
@@ -21825,7 +21825,6 @@ div#small-dialog1 iframe {
 /*--/w3l-grids-page--*/
 .w3l-grids-page {
   background: var(--bg-color);
-  margin-top: 80px;
 }
 
 .w3l-grids-page .course-details {
@@ -23230,15 +23229,15 @@ a.blog-desc1:hover {
 }
 
 .custom-img {
-  width: 100%; /* 確保圖片占滿父元素
+  width: 100%;  /* 確保圖片占滿父元素
   /* max-width: 1000px; 控制圖片的最大寬度，依需要調整 */
-  height: auto; /* 保持圖片的縱橫比
+  height: auto;  /* 保持圖片的縱橫比
 }
 
 @media (max-width: 991px) {
   .custom-img {
     max-width: 500px; /* 在小螢幕上限制最大寬度 */
-  /* } */
+  }
 }
 
 /* 當視窗寬度小於 768px 時，調整圖片大小 */
