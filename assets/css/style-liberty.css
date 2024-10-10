@@ -20413,6 +20413,7 @@ pre {
   min-height: 400px;
 }
 
+
 .breadcrumb-bg-about::before {
   content: "";
   background: var(--layer-1);
@@ -22081,7 +22082,7 @@ h3.aside-title {
   /* color: #00913a; */
   font-weight: 700;
   margin-bottom: 10px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   display: inline-block;
   margin-top: 0;
 }

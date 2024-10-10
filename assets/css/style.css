@@ -17,12 +17,6 @@
   list-style-type: square;
 }
 
-.breadcrumb-bg-about {
-  background: url(../images/加盟網站_加盟辦法背景.jpg) no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-}
-
 .breadcrumb-bg-about::before {
   background: inherit;
 }
@@ -160,4 +154,12 @@ ul.list-group li {
     width: 50%;
     display: inline-block;
   }
+}
+
+.mt-fixed-space {height: 50px;
+}
+
+@media (max-width: 768px) {
+.mt-fixed-space {height: 80px;
+}
 }
