@@ -18984,6 +18984,11 @@ a.search-search:hover {
   border-radius: var(--border-radius);
 }
 
+.w3l-slidehny-img a {
+  position: relative;
+  z-index: 10; /* 提升 a 標籤的 z-index */
+}
+
 /*--/owl-slider--*/
 
 /**
@@ -20412,7 +20417,6 @@ pre {
   align-items: center;
   min-height: 400px;
 }
-
 
 .breadcrumb-bg-about::before {
   content: "";
@@ -23230,16 +23234,16 @@ a.blog-desc1:hover {
 }
 
 .custom-img {
-  width: 100%;  /* 確保圖片占滿父元素
+  width: 100%; /* 確保圖片占滿父元素
   /* max-width: 1000px; 控制圖片的最大寬度，依需要調整 */
-  height: auto;  /* 保持圖片的縱橫比
+  height: auto; /* 保持圖片的縱橫比
 }
 
 @media (max-width: 991px) {
   .custom-img {
     max-width: 500px; /* 在小螢幕上限制最大寬度 */
-  }
 }
+/* }z */
 
 /* 當視窗寬度小於 768px 時，調整圖片大小 */
 @media (max-width: 768px) {
