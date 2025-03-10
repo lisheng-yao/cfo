@@ -1,6 +1,8 @@
 # 棉花田前端加盟頁面  
-本專案為棉花田加盟頁面的前端開發，使用 HTML5、Bootstrap 5、JavaScript 和 CSS 製作  
+本專案為棉花田加盟頁面的前端開發，使用 HTML5、Bootstrap 5、JavaScript 和 CSS 製作 
 
+## 展示頁面
+https://lisheng-yao.github.io/cfo/
 
 ## 〖 技術使用 〗  
 ● HTML5  
